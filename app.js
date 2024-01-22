@@ -10,7 +10,11 @@ const port = 3000;
 const dotenv = require('dotenv')
 dotenv.config()
 
-mongoose.connect(process.env.MONGO_DATABASE_CONNECTION_STRING)
+mongoose.connect(process.env.MONGO_DATABASE_CONNECTION_STRING,{ 
+  useNewUrlParser: true, 
+  useUnifiedTopology: true,
+  serverSelectionTimeoutMS: 5000,
+})
 
 // Middleware
 app.use(bodyParser.json());
