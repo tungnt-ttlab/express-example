@@ -10,8 +10,7 @@ const port = 3000;
 // const dotenv = require('dotenv')
 // dotenv.config()
 
-// mongoose.connect(process.env.MONGO_DATABASE_CONNECTION_STRING, {useNewUrlParser: true, useUnifiedTopology: true})
-mongoose.connect('mongodb+srv://tungnt:TIlDDHerU4gCKRwR@express-exanple.ub6hmgg.mongodb.net/test-express', {useNewUrlParser: true, useUnifiedTopology: true})
+mongoose.connect(process.env.MONGO_DATABASE_CONNECTION_STRING, {useNewUrlParser: true, useUnifiedTopology: true})
 
 // Middleware
 app.use(bodyParser.json());
