@@ -7,8 +7,8 @@ const UserController = require('./user/userController');
 
 const app = express();
 const port = 3000;
-const dotenv = require('dotenv')
-dotenv.config()
+// const dotenv = require('dotenv')
+// dotenv.config()
 
 mongoose.connect(process.env.MONGO_DATABASE_CONNECTION_STRING, {useNewUrlParser: true, useUnifiedTopology: true})
 
