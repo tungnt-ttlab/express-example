@@ -33,12 +33,6 @@ class UserController {
       await this.userService.deleteUser(userId);
       res.json({ message: 'User deleted successfully' });
     }
-
-    async updateUsers(req,res)
-    {
-      
-      res.json({ message: 'User updated successfully' });
-    }
   }
   
   module.exports = UserController;
