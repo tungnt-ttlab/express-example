@@ -4,8 +4,7 @@ class UserController {
     }
   
     async getAllUsers(req, res) {
-      const users = 'ahihi'
-      // await this.userService.getAllUsers();
+      const users = await this.userService.getAllUsers();
       res.json(users);
     }
   
