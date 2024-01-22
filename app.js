@@ -43,6 +43,10 @@ const userController =new UserController(userService);
 // Router
 const userRouter = require('./user/userRouter')(userController);
 
+app.get("/", (req, res) => {
+  res.send("Express on Vercel");
+}); 
+
 app.use('/api', userRouter);
 
 // start server
